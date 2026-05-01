@@ -755,15 +755,15 @@
   }
 
   /* ── FOOTER ── */
-  footer {
-    background: var(--negro);
-    color: rgba(255,255,255,0.4);
-    text-align: center;
-    padding: 30px 20px;
-    font-size: 0.78rem;
-    line-height: 1.8;
-  }
-  footer a { color: rgba(255,255,255,0.5); text-decoration: none; }
+  <footer>
+    <p>© 2025 · Guía de Ayudas para Inmigrantes en España · Todos los derechos reservados</p>
+    <p style="margin-top:8px;">
+      <a href="#">Política de privacidad</a> · <a href="#">Aviso legal</a> · <a href="#">Contacto</a>
+    </p>
+    <p style="margin-top:12px; font-size:0.72rem; opacity:0.6;">
+      Esta guía es un documento informativo de carácter educativo. La información se basa en fuentes oficiales del Gobierno de España vigentes en 2025. No constituye asesoramiento jurídico profesional.
+    </p>
+  </footer>
 
   /* ── STICKY MOBILE CTA ── */
   .sticky-cta {
@@ -811,7 +811,7 @@
 
   @keyframes pulse-glow {
     0%, 100% { box-shadow: 0 8px 30px rgba(245,166,35,0.45); }
-    50%       { box-shadow: 0 8px 50px rgba(245,166,35,0.7); }
+    50%        { box-shadow: 0 8px 50px rgba(245,166,35,0.7); }
   }
   .btn-primary { animation: pulse-glow 2.5s ease-in-out infinite; }
   .btn-primary:hover { animation: none; }
@@ -822,6 +822,27 @@
     .sticky-cta { gap: 10px; }
   }
 </style>
+<!-- Microsoft Clarity Tracking Code -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "wke6vhmxag");
+</script>
+<script type="text/javascript">
+  function importHotmart(){ 
+    var imported = document.createElement('script'); 
+    imported.src = 'https://static.hotmart.com/checkout/widget.min.js'; 
+    document.head.appendChild(imported); 
+    var link = document.createElement('link'); 
+    link.rel = 'stylesheet'; 
+    link.type = 'text/css'; 
+    link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css'; 
+    document.head.appendChild(link);
+  } 
+  importHotmart(); 
+</script>
 </head>
 <body>
 
@@ -841,7 +862,7 @@
     Más de 30 ayudas económicas reales que la mayoría de inmigrantes latinoamericanos nunca solicitan por no saber cómo. Esta guía te lo explica todo, paso a paso, en español claro.
   </p>
   <div class="hero-cta-group">
-    <a href="#precio" class="btn-primary">👉 Quiero acceder a la guía por 17€</a>
+    <a onclick="return false;" href="https://pay.hotmart.com/X105640494W?checkoutMode=2" class="btn-primary hotmart-fb hotmart__button-checkout">👉 Quiero acceder a la guía por 17€</a>
     <p class="hero-guarantee">
       <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
       Pago seguro · Descarga inmediata · Garantía 7 días
@@ -994,7 +1015,7 @@
       <li><span class="tick">✓</span> Actualizada con información vigente 2025</li>
       <li><span class="tick">✓</span> Garantía de devolución total 7 días</li>
     </ul>
-    <a href="#" class="btn-comprar">🇪🇸 Quiero mi guía por 17€ — Acceso inmediato</a>
+    <a onclick="return false;" href="https://pay.hotmart.com/X105640494W?checkoutMode=2" class="btn-comprar hotmart-fb hotmart__button-checkout">🇪🇸 Quiero mi guía por 17€ — Acceso inmediato</a>
     <div class="precio-micro">
       <span>🔒 Pago 100% seguro</span>
       <span>📥 Descarga instantánea</span>
@@ -1087,7 +1108,7 @@
 <section class="cta-final">
   <h2>No sigas dejando ese dinero sobre la mesa</h2>
   <p>Cada mes sin solicitar estas ayudas es dinero que el Estado se queda. Es tuyo. Y esta guía te dice exactamente cómo reclamarlo.</p>
-  <a href="#precio" class="btn-primary">👉 Acceder a la guía por solo 17€</a>
+  <a onclick="return false;" href="https://pay.hotmart.com/X105640494W?checkoutMode=2" class="btn-primary hotmart-fb hotmart__button-checkout">👉 Acceder a la guía por solo 17€</a>
   <p class="cta-final-micro">⏱️ Precio especial válido por tiempo limitado · Vuelve a 37€ al terminar la cuenta atrás</p>
 </section>
 
@@ -1108,7 +1129,7 @@
     <div class="sticky-old">37€</div>
     <div class="sticky-new">17€ hoy</div>
   </div>
-  <a href="#precio" class="sticky-btn">Quiero la guía →</a>
+  <a onclick="return false;" href="https://pay.hotmart.com/X105640494W?checkoutMode=2" class="sticky-btn hotmart-fb hotmart__button-checkout">Quiero la guía →</a>
 </div>
 
 <script>
@@ -1146,14 +1167,6 @@
     } else {
       sticky.classList.remove('visible');
     }
-  });
-
-  // ── SMOOTH ANCHOR ──
-  document.querySelectorAll('a[href="#precio"]').forEach(a => {
-    a.addEventListener('click', e => {
-      e.preventDefault();
-      document.getElementById('precio').scrollIntoView({ behavior: 'smooth' });
-    });
   });
 </script>
 </body>
